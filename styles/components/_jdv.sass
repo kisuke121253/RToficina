@@ -1,0 +1,32 @@
+@import ../abstract/_variaveis.sass
+body
+    disply: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    margin: 0
+    font-size: 2.5rem
+    font-family: $font-family
+    flex-direction: column
+    .board
+        display: grid
+        grid-template-columns: repeat(20, 1fr)
+        grid-gap: 1px
+        background-color: #444
+        padding: 10px
+    .cell
+        width: 20px
+        height: 20px
+        background-color: #ddd
+
+.btn2
+    padding: 1rem
+    font-size: 2.5rem
+    font-family: $font-family
+    background-color: $cor-terciaria
+    border: 2px solid $cor-primaria
+.fn
+    position: relative
+    font-size: 1.5rem
+    text-decoration: none
+    color: $cor-terciaria

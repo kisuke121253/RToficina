@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Divisor de conta de restaurante</title>
+</head>
+
+<body>
+    <div id="form-container">
+        <h1>Calculadora de Divisão de Conta</h1>
+        <br>
+        <label for="client-input">Cliente:</label>
+        <input type="text" id="client-input">
+
+        <label for="product-input">Produto:</label>
+        <input type="text" id="product-input">
+
+        <label for="price-input">Preço:</label>
+        <input type="number" id="price-input">
+
+        <button class="btn3" onclick="addItem()">Adicionar</button>
+
+        <h2>Itens:</h2>
+        <ul id="item-list"></ul>
+
+        <button class="btn3" onclick="calculateBill()">Calcular Conta</button>
+
+        <h2>Resultado:</h2>
+        <ul id="result-list"></ul>
+        <a class="fn" href="/index.html">retornar para o menu</a>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
